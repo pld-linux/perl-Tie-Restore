@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without  tests           # do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Tie
@@ -27,11 +27,11 @@ Provides the opposite of the 'tied' function. Say you have %%hash that
 is tied to $object. Then, it is relatively simple to get $object from
 %%hash simply by saying
 
- $object = tied %%hash;
+	$object = tied %%hash;
 
 But, how does one go the other way? Simple, with Tie::Restore
 
- tie %%hash, 'Tie::Restore', $object;
+	tie %%hash, 'Tie::Restore', $object;
 
 Works for any kind of tie. (scalar, array, hash, filehandle)
 
@@ -40,11 +40,11 @@ Ten modu³ dostarcza odwrotno¶æ funkcji 'tied'. Za³ó¿my, ¿e mamy %%hash
 przywi±zany do obiektu $object. Wtedy mo¿na stosunkowo prosto otrzymaæ
 $object z %%hash poprzez
 
-  $object = tied %%hash;
+	$object = tied %%hash;
 
 Ale jak teraz zrobiæ na odwrót? Proste, przy u¿yciu Tie::Restore:
 
-  tie %%hash, 'Tie::Restore', $object;
+	tie %%hash, 'Tie::Restore', $object;
 
 Dzia³a z dowolnym rodzajem przywi±zania (skalarem, tablic±, tablic±
 asocjacyjn±, uchwytem do pliku).
