@@ -9,13 +9,14 @@ Summary:	Tie::Restore - restores ties to an existing object
 #Summary(pl):
 Name:		perl-Tie-Restore
 Version:	0.11
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1300dfc45d0eb7e4cf0634c81c030230
-URL:		http://search.cpan.org/dist/Tie-Restore
+Patch0:		%{name}-path.patch
+URL:		http://search.cpan.org/dist/Tie-Restore/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -39,6 +40,7 @@ Works for any kind of tie. (scalar, array, hash, filehandle)
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
