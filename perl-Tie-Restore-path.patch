@@ -1,0 +1,8 @@
+--- Tie-Restore-0.11/Restore.pm~	2002-05-23 01:24:38.000000000 +0200
++++ Tie-Restore-0.11/Restore.pm	2004-08-08 19:20:59.242487120 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl
++#!/usr/bin/perl
+ 
+ =head1 NAME
+ 
