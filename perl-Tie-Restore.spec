@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Tie
-%define	pnam	Restore
+%define		pdir	Tie
+%define		pnam	Restore
 Summary:	Tie::Restore - restores ties to an existing object
 Summary(pl):	Tie::Restore - odtworzenie powi±zañ do istniej±cego obiektu
 Name:		perl-Tie-Restore
