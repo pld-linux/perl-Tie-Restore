@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	Restore
 Summary:	Tie::Restore - restores ties to an existing object
-Summary(pl):	Tie::Restore - odtworzenie powi±zañ do istniej±cego obiektu
+Summary(pl.UTF-8):   Tie::Restore - odtworzenie powiÄ…zaÅ„ do istniejÄ…cego obiektu
 Name:		perl-Tie-Restore
 Version:	0.11
 Release:	2
@@ -35,19 +35,19 @@ But, how does one go the other way? Simple, with Tie::Restore
 
 Works for any kind of tie. (scalar, array, hash, filehandle)
 
-%description -l pl
-Ten modu³ dostarcza odwrotno¶æ funkcji 'tied'. Za³ó¿my, ¿e mamy %%hash
-przywi±zany do obiektu $object. Wtedy mo¿na stosunkowo prosto otrzymaæ
+%description -l pl.UTF-8
+Ten moduÅ‚ dostarcza odwrotnoÅ›Ä‡ funkcji 'tied'. ZaÅ‚Ã³Å¼my, Å¼e mamy %%hash
+przywiÄ…zany do obiektu $object. Wtedy moÅ¼na stosunkowo prosto otrzymaÄ‡
 $object z %%hash poprzez
 
 	$object = tied %%hash;
 
-Ale jak teraz zrobiæ na odwrót? Proste, przy u¿yciu Tie::Restore:
+Ale jak teraz zrobiÄ‡ na odwrÃ³t? Proste, przy uÅ¼yciu Tie::Restore:
 
 	tie %%hash, 'Tie::Restore', $object;
 
-Dzia³a z dowolnym rodzajem przywi±zania (skalarem, tablic±, tablic±
-asocjacyjn±, uchwytem do pliku).
+DziaÅ‚a z dowolnym rodzajem przywiÄ…zania (skalarem, tablicÄ…, tablicÄ…
+asocjacyjnÄ…, uchwytem do pliku).
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
