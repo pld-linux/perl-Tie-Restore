@@ -6,7 +6,7 @@
 %define		pdir	Tie
 %define		pnam	Restore
 Summary:	Tie::Restore - restores ties to an existing object
-Summary(pl.UTF-8):   Tie::Restore - odtworzenie powiązań do istniejącego obiektu
+Summary(pl.UTF-8):	Tie::Restore - odtworzenie powiązań do istniejącego obiektu
 Name:		perl-Tie-Restore
 Version:	0.11
 Release:	2
