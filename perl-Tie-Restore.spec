@@ -9,7 +9,7 @@ Summary:	Tie::Restore - restores ties to an existing object
 Summary(pl.UTF-8):	Tie::Restore - odtworzenie powiązań do istniejącego obiektu
 Name:		perl-Tie-Restore
 Version:	0.11
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
