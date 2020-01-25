@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Tie
 %define		pnam	Restore
 Summary:	Tie::Restore - restores ties to an existing object
